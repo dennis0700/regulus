@@ -1,0 +1,267 @@
+{
+  "_comment": "Sample assets for the regulus tests. RAW from raw.pixls.us (per-file license shown on https://raw.pixls.us/ repository table; most samples are CC0, verify the License column before redistribution). JPEG from Wikimedia Commons (author/license per file page). sha1 = Commons-published SHA-1; sha256 is filled by scripts/fetch_samples.py after the first successful download.",
+  "raw": [
+    {
+      "file": "raw/nikon_z8_he_low.NEF",
+      "format": "NEF",
+      "brand": "Nikon",
+      "camera": "Nikon Z 8",
+      "url": "https://raw.pixls.us/data/Nikon/Z%208/Nikon_Z8_high_efficiency_low.NEF",
+      "source": "https://raw.pixls.us/data/Nikon/Z%208/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "23M",
+      "sha256": "82df041542b8d328738443bb5ff3373b396e406ecc8cbe7dc3b35252790c53e7"
+    },
+    {
+      "file": "raw/nikon_z9_he.NEF",
+      "format": "NEF",
+      "brand": "Nikon",
+      "camera": "Nikon Z 9",
+      "url": "https://raw.pixls.us/data/Nikon/Z%209/Nikon_-_NIKON_Z_9_-_14bit_compressed_%28Lossy_High_Efficiency%29.NEF",
+      "source": "https://raw.pixls.us/data/Nikon/Z%209/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "24M",
+      "sha256": "be91bac25573adf7ec6320a542105d87b4fb9c956d7b620ec90d57ac2ae6c3f0"
+    },
+    {
+      "file": "raw/sony_a9m3_DSC00114.ARW",
+      "format": "ARW",
+      "brand": "Sony",
+      "camera": "Sony ILCE-9M3 (A9 III)",
+      "url": "https://raw.pixls.us/data/Sony/ILCE-9M3/DSC00114.ARW",
+      "source": "https://raw.pixls.us/data/Sony/ILCE-9M3/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "16M",
+      "sha256": "3d9da593a027bdbf31589eb950b04be7ce3f3dc6105ca339c5b7702ffa7fefdd"
+    },
+    {
+      "file": "raw/sony_a1_lossless.ARW",
+      "format": "ARW",
+      "brand": "Sony",
+      "camera": "Sony ILCE-1 (A1)",
+      "url": "https://raw.pixls.us/data/Sony/ILCE-1/A1_full_lossless_compressed.ARW",
+      "source": "https://raw.pixls.us/data/Sony/ILCE-1/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "78M",
+      "sha256": "4012536ee0f938d8c5c5e932bb7953a03134abbd9f3f4c664cb2526c1903d492"
+    },
+    {
+      "file": "raw/canon_r7_443A0159.CR3",
+      "format": "CR3",
+      "brand": "Canon",
+      "camera": "Canon EOS R7",
+      "url": "https://raw.pixls.us/data/Canon/EOS%20R7/443A0159.CR3",
+      "source": "https://raw.pixls.us/data/Canon/EOS%20R7/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "13M",
+      "sha256": "10a18e3f01ca9cd93408496d3853388ef140830548bfeed4237e40f967eb9d5c"
+    },
+    {
+      "file": "raw/canon_r5_raw_nocrop_nodual.CR3",
+      "format": "CR3",
+      "brand": "Canon",
+      "camera": "Canon EOS R5",
+      "url": "https://raw.pixls.us/data/Canon/EOS%20R5/Canon_EOS_R5_RAW_ISO_100_nocrop_nodual.CR3",
+      "source": "https://raw.pixls.us/data/Canon/EOS%20R5/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "39M",
+      "sha256": "21430c36387efe65bd09ac0fcd724bfd959d93dd391ec811a1b741c8663becb5"
+    },
+    {
+      "file": "raw/om_om1_P1010025.ORF",
+      "format": "ORF",
+      "brand": "OM System",
+      "camera": "OM System OM-1",
+      "url": "https://raw.pixls.us/data/OM%20System/OM-1/OM_Systems_OM1_RAW_Image_20mpx_P1010025.ORF",
+      "source": "https://raw.pixls.us/data/OM%20System/OM-1/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "21M",
+      "sha256": "bf2eef6becc0851e48231617c3e2eac27a2cdb44c75b93035c561d837952c18b"
+    },
+    {
+      "file": "raw/olympus_em1m3_3160531.ORF",
+      "format": "ORF",
+      "brand": "Olympus",
+      "camera": "Olympus E-M1 Mark III",
+      "url": "https://raw.pixls.us/data/Olympus/E-M1MarkIII/_3160531.ORF",
+      "source": "https://raw.pixls.us/data/Olympus/E-M1MarkIII/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "17M",
+      "sha256": "1e7a256eff14df75055dd7fe7a68aabefb4d8ed475317e80ebf7ff77d5bcfd3f"
+    },
+    {
+      "file": "raw/panasonic_g9m2_P1000019.RW2",
+      "format": "RW2",
+      "brand": "Panasonic",
+      "camera": "Panasonic DC-G9M2 (G9 II)",
+      "url": "https://raw.pixls.us/data/Panasonic/DC-G9M2/P1000019.RW2",
+      "source": "https://raw.pixls.us/data/Panasonic/DC-G9M2/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "39M",
+      "sha256": "dd4bc19ed6cf6625608a1ff14ce1a9d16692e1bf1d50993a3fc076e18905b662"
+    },
+    {
+      "file": "raw/panasonic_s5m2_P1126460.RW2",
+      "format": "RW2",
+      "brand": "Panasonic",
+      "camera": "Panasonic DC-S5M2 (S5 II)",
+      "url": "https://raw.pixls.us/data/Panasonic/DC-S5M2/P1126460_burst_electronic.RW2",
+      "source": "https://raw.pixls.us/data/Panasonic/DC-S5M2/",
+      "license": "see raw.pixls.us License column (expected CC0)",
+      "size_hint": "35M",
+      "sha256": "7480e44ed8557b71b1618e2d91c0f3eea58b60cb5a9196d2a1a552cfa509a1d2"
+    }
+  ],
+  "jpeg": [
+    {
+      "file": "jpeg/perched_chiffchaff.jpg",
+      "subject": "perched",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/2017.05.17.-03-Kirschgartshaeuser_Schlaege-Mannheim--Zilpzalp.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2017.05.17.-03-Kirschgartshaeuser_Schlaege-Mannheim--Zilpzalp.jpg",
+      "author": "Andreas Eichler",
+      "license": "CC BY-SA 4.0",
+      "sha1": "3028da432a0dfe898e6c57c62ae63b65bc54788d",
+      "sha256": "78f419f6212a3aceec39a617b02c82a1b1c946029347937eb8d36d10f9f6265d"
+    },
+    {
+      "file": "jpeg/perched_apostlebird.jpg",
+      "subject": "perched",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Apostlebird_-_Bimbi.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Apostlebird_-_Bimbi.jpg",
+      "author": "JJ Harrison",
+      "license": "CC BY-SA 4.0",
+      "sha1": "a58e8ced33a282716f18cc6fd11a6203fdd4b541",
+      "sha256": "829f491fadb6074dcda6227c4c73593ffc2613cd874aa7047b2ccacb66c7f99c"
+    },
+    {
+      "file": "jpeg/perched_black_naped_monarch.jpg",
+      "subject": "perched",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Black-naped_Monarch_0A2A8267.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Black-naped_Monarch_0A2A8267.jpg",
+      "author": "JJ Harrison",
+      "license": "CC BY-SA 3.0",
+      "sha1": "ffd20371722ba3b4af07d20807bddc94e192eead",
+      "sha256": "cd5d1c98504581037fbedbf1303b4c56d9ea9f42a4c401b9ab09c2e4c2408b11"
+    },
+    {
+      "file": "jpeg/perched_broad_tailed_grassbird.jpg",
+      "subject": "perched",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Broad-tailed_Grassbird_in_Mahabaleshwar_August_2025_by_Tisha_Mukherjee_03.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Broad-tailed_Grassbird_in_Mahabaleshwar_August_2025_by_Tisha_Mukherjee_03.jpg",
+      "author": "Tisha Mukherjee",
+      "license": "CC BY-SA 4.0",
+      "sha1": "a47c88f6b69e287349e00992396b796a6fe3dd16",
+      "sha256": "2cd9e2f3f7bf43fe434605e118144b70eb35bd2451e4941919f4db652c27b152"
+    },
+    {
+      "file": "jpeg/perched_cedar_waxwing.jpg",
+      "subject": "perched",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Cedar_waxwing_in_Green-Wood_Cemetery_%2855650%29.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Cedar_waxwing_in_Green-Wood_Cemetery_(55650).jpg",
+      "author": "Rhododendrites",
+      "license": "CC BY-SA 4.0",
+      "sha1": "d9ace8deea68160cc5123c0fa87039ad3aec1b17",
+      "sha256": "9201ce3bbf7cb33d256fc317e7016797fb6820dfed82b0198a240731997b179c"
+    },
+    {
+      "file": "jpeg/perched_eastern_bristlebird.jpg",
+      "subject": "perched",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Eastern_Bristlebird_-_Penrith.jpg/1920px-Eastern_Bristlebird_-_Penrith.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Eastern_Bristlebird_-_Penrith.jpg",
+      "author": "JJ Harrison",
+      "license": "CC BY-SA 4.0",
+      "sha256": "1a9fff68df5f5c16e25e0fcc1f01a72a2b3a479cb6ee58b3dee7c4b76131bdb1",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)"
+    },
+    {
+      "file": "jpeg/perched_bristled_grassbird.jpg",
+      "subject": "perched",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Bristled_Grassbird_in_Baruipur_April_2024_by_Tisha_Mukherjee_01.jpg/1920px-Bristled_Grassbird_in_Baruipur_April_2024_by_Tisha_Mukherjee_01.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Bristled_Grassbird_in_Baruipur_April_2024_by_Tisha_Mukherjee_01.jpg",
+      "author": "Tisha Mukherjee",
+      "license": "CC BY-SA 4.0",
+      "sha256": "4a9b99d685725836f6b38a3e945e6515196a7f82a934589eb8a19c7253294d59",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)"
+    },
+    {
+      "file": "jpeg/flight_bearded_vulture_a.jpg",
+      "subject": "flight",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/64/010d_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg/1920px-010d_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:010d_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sha256": "d8403c4608defae5bb0541439652c8191db55f115393c5b0b15611bd590c626e",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)"
+    },
+    {
+      "file": "jpeg/flight_bearded_vulture_b.jpg",
+      "subject": "flight",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/010e_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg/1920px-010e_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:010e_Wild_Bearded_Vulture_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sha256": "f81258dcb0b260266f5fece673f775fe1f586e23f041899e2bf877357210afbf",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)"
+    },
+    {
+      "file": "jpeg/flight_alpine_chough.jpg",
+      "subject": "flight",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/013_Wild_Alpine_chough_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg/1920px-013_Wild_Alpine_chough_in_flight_at_Pfyn-Finges_%28Switzerland%29_Photo_by_Giles_Laurent.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:013_Wild_Alpine_chough_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sha256": "2cfbe83d70636923b13cfc5019e5fe8610c2cf66694da46d358b29038a11fa94",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)"
+    },
+    {
+      "file": "jpeg/flight_olive_bellied_sunbird.jpg",
+      "subject": "flight",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/003_Olive-bellied_Sunbird_in_flight_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/1920px-003_Olive-bellied_Sunbird_in_flight_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:003_Olive-bellied_Sunbird_in_flight_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sha256": "08e8e27ef20532a23c0540afea9974ad3347f07e459fc285a591eb87acfeeaa9",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)"
+    },
+    {
+      "file": "jpeg/flight_greater_flamingo_takeoff.jpg",
+      "subject": "flight",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/80/002_Greater_flamingo_taking_off_in_the_Camargue_Photo_by_Giles_Laurent.jpg/1920px-002_Greater_flamingo_taking_off_in_the_Camargue_Photo_by_Giles_Laurent.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:002_Greater_flamingo_taking_off_in_the_Camargue_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sha256": "9badc2a3adacaab1b20fb6471f4e3d1e51c43799744bd6e00f7608a90764b544",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)"
+    },
+    {
+      "file": "jpeg/small_golden_eagle_majinghorn.jpg",
+      "subject": "small_in_frame",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/001_Wild_Golden_Eagle_and_Majinghorn_Pfyn-Finges_Photo_by_Giles_Laurent.jpg/1920px-001_Wild_Golden_Eagle_and_Majinghorn_Pfyn-Finges_Photo_by_Giles_Laurent.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:001_Wild_Golden_Eagle_and_Majinghorn_Pfyn-Finges_Photo_by_Giles_Laurent.jpg",
+      "author": "Giles Laurent",
+      "license": "CC BY-SA 4.0",
+      "sha256": "29bb1ea154eabc54e0a93a5f4544c29555775f67d15110d26343f7aaa12918bb"
+    },
+    {
+      "file": "jpeg/negative_park_klodzko.jpg",
+      "subject": "negative",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/2014_Park_w_K%C5%82odzku.jpg/1920px-2014_Park_w_K%C5%82odzku.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:2014_Park_w_K%C5%82odzku.jpg",
+      "author": "Jacek Halicki",
+      "license": "CC BY-SA 4.0",
+      "sha256": "de3f6c7f7e49424b0c85c3c7f371238e2f14987b28ad4d32653ac895565ee7fb"
+    },
+    {
+      "file": "jpeg/negative_andiast_landscape.jpg",
+      "subject": "negative",
+      "note": "1920px Commons thumbnail (original rate-limited, 429)",
+      "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Andiast-Breil-Brigels._24-09-2025._%28d.j.b.%29_08.jpg/1920px-Andiast-Breil-Brigels._24-09-2025._%28d.j.b.%29_08.jpg",
+      "source": "https://commons.wikimedia.org/wiki/File:Andiast-Breil-Brigels._24-09-2025._(d.j.b.)_08.jpg",
+      "author": "Dominicus Johannes Bergsma",
+      "license": "CC BY-SA 4.0",
+      "sha256": "654b2c4f42d25b822d623df4f8c9c9d7f8bc186b7a67f4840dbe015e1174ed74"
+    }
+  ]
+}

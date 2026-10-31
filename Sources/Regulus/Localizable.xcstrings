@@ -1,0 +1,2825 @@
+{
+  "sourceLanguage" : "zh-Hans",
+  "strings" : {
+    "" : {
+      "shouldTranslate" : false
+    },
+    " " : {
+      "shouldTranslate" : false
+    },
+    "%@ %.1f" : {
+      "shouldTranslate" : false
+    },
+    "%@ %@" : {
+      "shouldTranslate" : false
+    },
+    "%@ 等" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@, …"
+          }
+        }
+      }
+    },
+    "%@×" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@×"
+          }
+        }
+      }
+    },
+    "%@。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@."
+          }
+        }
+      }
+    },
+    "%@当前显示的 %lld 张照片。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ the %#@n@ shown."
+          },
+          "substitutions" : {
+            "n" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photo"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photos"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@当前显示的 %2$lld 张照片。"
+          }
+        }
+      }
+    },
+    "%@所选的 %lld 张照片。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@ the %#@n@."
+          },
+          "substitutions" : {
+            "n" : {
+              "argNum" : 2,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg selected photo"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg selected photos"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@所选的 %2$lld 张照片。"
+          }
+        }
+      }
+    },
+    "%@进度" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ progress"
+          }
+        }
+      }
+    },
+    "%@（全部）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (All)"
+          }
+        }
+      }
+    },
+    "%@（所选）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%@ (Selected)"
+          }
+        }
+      }
+    },
+    "%@，%lld 个未能删除（已保留）。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@; %2$lld could not be deleted (kept)."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@，%2$lld 个未能删除（已保留）。"
+          }
+        }
+      }
+    },
+    "%@：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%1$@: %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@：%2$@"
+          }
+        }
+      }
+    },
+    "%lld / %lld" : {
+      "shouldTranslate" : false
+    },
+    "%lld × %lld" : {
+      "shouldTranslate" : false
+    },
+    "%lld 张照片" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Photo"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld Photos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld 星" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld star"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld stars"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "%lld%%" : {
+      "shouldTranslate" : false
+    },
+    "%lld/%lld" : {
+      "shouldTranslate" : false
+    },
+    "1 张照片" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "1 Photo"
+          }
+        }
+      }
+    },
+    "GBIF 全球罕见度（0–100，越高越少见）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "GBIF global rarity (0–100, higher is rarer)"
+          }
+        }
+      }
+    },
+    "IUCN 红色名录等级" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "IUCN Red List category"
+          }
+        }
+      }
+    },
+    "Regulus" : {
+      "shouldTranslate" : false
+    },
+    "Regulus %@ 可以更新了" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regulus %@ is available"
+          }
+        }
+      }
+    },
+    "Regulus %@ 已是最新版本。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regulus %@ is up to date."
+          }
+        }
+      }
+    },
+    "flag.picked" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Picked"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "旗标"
+          }
+        }
+      }
+    },
+    "flag.rejected" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rejected"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "排除"
+          }
+        }
+      }
+    },
+    "tasks.all" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rate + Identify"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "评分+识别"
+          }
+        }
+      }
+    },
+    "tasks.identify" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identify"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "识别"
+          }
+        }
+      }
+    },
+    "tasks.rate" : {
+      "extractionState" : "extracted_with_value",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rate"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "评分"
+          }
+        }
+      }
+    },
+    "、" : {
+      "comment" : "文件名之间的分隔符 / separator between file names",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : ", "
+          }
+        }
+      }
+    },
+    "「%@」下载失败：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t download “%1$@”: %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "「%1$@」下载失败：%2$@"
+          }
+        }
+      }
+    },
+    "「%@」已经存在。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” already exists."
+          }
+        }
+      }
+    },
+    "上一个视频" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previous Video"
+          }
+        }
+      }
+    },
+    "上一个视频（←）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previous video (←)"
+          }
+        }
+      }
+    },
+    "上一张" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previous"
+          }
+        }
+      }
+    },
+    "上一张（←）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Previous (←)"
+          }
+        }
+      }
+    },
+    "下一个视频" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next Video"
+          }
+        }
+      }
+    },
+    "下一个视频（→）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next video (→)"
+          }
+        }
+      }
+    },
+    "下一张" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next"
+          }
+        }
+      }
+    },
+    "下一张（→）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Next (→)"
+          }
+        }
+      }
+    },
+    "下载中" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Downloading"
+          }
+        }
+      }
+    },
+    "下载完成后 Regulus 会退出，换成新版本后重新打开。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Once downloaded, Regulus will quit, switch to the new version and reopen."
+          }
+        }
+      }
+    },
+    "下载并重新打开" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Download and Relaunch"
+          }
+        }
+      }
+    },
+    "下载缺少或有更新的模型（%@）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Download Missing or Updated Models (%@)"
+          }
+        }
+      }
+    },
+    "不限" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Any"
+          }
+        }
+      }
+    },
+    "从侧边栏移除" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Remove from Sidebar"
+          }
+        }
+      }
+    },
+    "以后" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Later"
+          }
+        }
+      }
+    },
+    "传奇" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Legendary"
+          }
+        }
+      }
+    },
+    "倍速" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Speed"
+          }
+        }
+      }
+    },
+    "停止" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop"
+          }
+        }
+      }
+    },
+    "停止分析" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop Analysis"
+          }
+        }
+      }
+    },
+    "停止（⌘.）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Stop (⌘.)"
+          }
+        }
+      }
+    },
+    "全境" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Entire country"
+          }
+        }
+      }
+    },
+    "全选" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Select All"
+          }
+        }
+      }
+    },
+    "写入鸟种信息" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write Species Info"
+          }
+        }
+      }
+    },
+    "写入鸟种信息（%lld 张）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write Species Info (%lld Photos)"
+          }
+        }
+      }
+    },
+    "分析或导入进行中，结束后再更新。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An analysis or import is running. Update when it finishes."
+          }
+        }
+      }
+    },
+    "分析或导入进行中，结束后再重新打开" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An analysis or import is running. Reopen when it finishes."
+          }
+        }
+      }
+    },
+    "分析进行中，等分析结束后再移动照片。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An analysis is running. Move photos after it finishes."
+          }
+        }
+      }
+    },
+    "分析进行中，结束后再下载" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "An analysis is running. Download when it finishes."
+          }
+        }
+      }
+    },
+    "创建" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create"
+          }
+        }
+      }
+    },
+    "剪切" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cut"
+          }
+        }
+      }
+    },
+    "取消" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Cancel"
+          }
+        }
+      }
+    },
+    "取消固定位置" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Unpin Position"
+          }
+        }
+      }
+    },
+    "取消选择" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deselect All"
+          }
+        }
+      }
+    },
+    "只删除已校验复制到照片库、或照片库里已有的文件；导入失败、取消导入、相机里设了保护的照片都会保留。删除后无法恢复。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Only files verified as copied to the library, or already in it, are deleted. Failed or cancelled imports and photos protected in the camera are kept. Deleted files can’t be recovered."
+          }
+        }
+      }
+    },
+    "只用于这一次识别；默认地点在「设置 › 识别」里修改。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Used for this run only; change the default in Settings › Identification."
+          }
+        }
+      }
+    },
+    "可以在 Finder 的废纸篓里「放回原处」。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "You can use “Put Back” from the Trash in Finder."
+          }
+        }
+      }
+    },
+    "可以通过「文件 › 导入…」（⇧⌘I）导入照片。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import photos with File › Import… (⇧⌘I)."
+          }
+        }
+      }
+    },
+    "各地区鸟种名录" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regional species checklists"
+          }
+        }
+      }
+    },
+    "名称" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Name"
+          }
+        }
+      }
+    },
+    "后退 10 秒" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back 10 Seconds"
+          }
+        }
+      }
+    },
+    "后退 10 秒（J）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back 10 seconds (J)"
+          }
+        }
+      }
+    },
+    "向右旋转" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rotate Right"
+          }
+        }
+      }
+    },
+    "向右旋转（⌘]），只改显示" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rotate right (⌘]); display only"
+          }
+        }
+      }
+    },
+    "向左旋转" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rotate Left"
+          }
+        }
+      }
+    },
+    "向左旋转（⌘[），只改显示" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rotate left (⌘[); display only"
+          }
+        }
+      }
+    },
+    "启动时自动检查更新" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check for updates automatically at launch"
+          }
+        }
+      }
+    },
+    "固定位置" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pin Position"
+          }
+        }
+      }
+    },
+    "固定后这个文件夹留在当前位置，不能拖动，拖动其他文件夹也不会挤开它" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A pinned folder stays where it is: it can’t be dragged, and dragging other folders won’t push it aside"
+          }
+        }
+      }
+    },
+    "国家或地区" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Country or region"
+          }
+        }
+      }
+    },
+    "在 Finder 中打开" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open in Finder"
+          }
+        }
+      }
+    },
+    "在 Finder 中显示" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Show in Finder"
+          }
+        }
+      }
+    },
+    "在 GitHub 上查看" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "View on GitHub"
+          }
+        }
+      }
+    },
+    "在「%@」里新建" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Create in “%@”"
+          }
+        }
+      }
+    },
+    "失败的文件" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Failed Files"
+          }
+        }
+      }
+    },
+    "好" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "OK"
+          }
+        }
+      }
+    },
+    "存储位置" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Location"
+          }
+        }
+      }
+    },
+    "存储卡" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Memory Card"
+          }
+        }
+      }
+    },
+    "完成" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Done"
+          }
+        }
+      }
+    },
+    "导入…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import…"
+          }
+        }
+      }
+    },
+    "导入到照片库" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import to Library"
+          }
+        }
+      }
+    },
+    "导入后删除原文件？" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete the originals after importing?"
+          }
+        }
+      }
+    },
+    "导入后删除存储卡上的原文件" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete originals from the card after importing"
+          }
+        }
+      }
+    },
+    "导入后删除相机里的原文件" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Delete originals from the camera after importing"
+          }
+        }
+      }
+    },
+    "导入完成后，已安全导入的 %lld 个文件中的原文件会从存储卡里删除，无法恢复。" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "After importing, the original of the %lld safely imported file will be deleted from the card. This can’t be undone."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "After importing, the originals of the %lld safely imported files will be deleted from the card. This can’t be undone."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "导入完成后，已安全导入的 %lld 个文件中的原文件会从相机里删除，无法恢复。" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "After importing, the original of the %lld safely imported file will be deleted from the camera. This can’t be undone."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "After importing, the originals of the %lld safely imported files will be deleted from the camera. This can’t be undone."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "导入已取消，已复制的照片保留在目标文件夹中。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import cancelled. Photos already copied remain in the destination folder."
+          }
+        }
+      }
+    },
+    "导入并删除原文件" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import and Delete Originals"
+          }
+        }
+      }
+    },
+    "导入照片" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import Photos"
+          }
+        }
+      }
+    },
+    "导入照片…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import Photos…"
+          }
+        }
+      }
+    },
+    "导入照片时选择的文件夹就是照片库。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The folder you choose when importing photos is the library."
+          }
+        }
+      }
+    },
+    "导入目标文件夹" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import destination"
+          }
+        }
+      }
+    },
+    "导入进度" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Import progress"
+          }
+        }
+      }
+    },
+    "将 %lld 张照片移到废纸篓" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Move %lld Photo to Trash"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Move %lld Photos to Trash"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "将 %lld 张照片移动到" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move %lld Photos To"
+          }
+        }
+      }
+    },
+    "少见" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scarce"
+          }
+        }
+      }
+    },
+    "尚未设置照片库" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Library Yet"
+          }
+        }
+      }
+    },
+    "尚未选择" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not chosen"
+          }
+        }
+      }
+    },
+    "已从存储卡删除 %lld 个原文件" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Deleted %lld original from the card"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Deleted %lld originals from the card"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "已从相机删除 %lld 个原文件" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Deleted %lld original from the camera"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Deleted %lld originals from the camera"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "已固定" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pinned"
+          }
+        }
+      }
+    },
+    "已复制 %lld 个，已存在跳过 %lld 个，失败 %lld 个。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copied: %1$lld. Skipped (already present): %2$lld. Failed: %3$lld."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "已复制 %1$lld 个，已存在跳过 %2$lld 个，失败 %3$lld 个。"
+          }
+        }
+      }
+    },
+    "已安装" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Installed"
+          }
+        }
+      }
+    },
+    "常见" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Common"
+          }
+        }
+      }
+    },
+    "开始" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start"
+          }
+        }
+      }
+    },
+    "开始导入" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Start Import"
+          }
+        }
+      }
+    },
+    "当前版本" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current version"
+          }
+        }
+      }
+    },
+    "当前版本 %@。下载 %@，装好后自动重新打开。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current version: %1$@. Downloads %2$@ and reopens automatically once installed."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "当前版本 %1$@。下载 %2$@，装好后自动重新打开。"
+          }
+        }
+      }
+    },
+    "快进 10 秒" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forward 10 Seconds"
+          }
+        }
+      }
+    },
+    "快进 10 秒（L）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Forward 10 seconds (L)"
+          }
+        }
+      }
+    },
+    "所有照片" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All Photos"
+          }
+        }
+      }
+    },
+    "找到 %lld 个文件，共 %@。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Found %#@n@, %2$@ in total."
+          },
+          "substitutions" : {
+            "n" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg file"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg files"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "找到 %1$lld 个文件，共 %2$@。"
+          }
+        }
+      }
+    },
+    "把 %lld 张照片移到废纸篓？" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Move %lld photo to the Trash?"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Move %lld photos to the Trash?"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "把「%@」移到废纸篓？" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move “%@” to the Trash?"
+          }
+        }
+      }
+    },
+    "把鸟名、目科属、IUCN 等级和罕见度写进照片的标题、描述和关键字（会替换原有描述）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Write the bird name, order/family/genus, IUCN category and rarity into the photo’s title, description and keywords (replaces the existing description)"
+          }
+        }
+      }
+    },
+    "拍摄地点" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Shooting location"
+          }
+        }
+      }
+    },
+    "拷贝" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Copy"
+          }
+        }
+      }
+    },
+    "按 1–5 给所选照片评分（写入照片文件），按 0 清除评分" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Press 1–5 to rate the selected photos (written to the files), 0 to clear the rating"
+          }
+        }
+      }
+    },
+    "排除" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reject"
+          }
+        }
+      }
+    },
+    "提示" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Notice"
+          }
+        }
+      }
+    },
+    "播放" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Play"
+          }
+        }
+      }
+    },
+    "播放速度" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Playback speed"
+          }
+        }
+      }
+    },
+    "播放（空格）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Play (Space)"
+          }
+        }
+      }
+    },
+    "放大" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom In"
+          }
+        }
+      }
+    },
+    "放大（⌘= 或 ⌘ + 滚轮向上），最大 100%" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom in (⌘= or ⌘ + scroll up), up to 100%"
+          }
+        }
+      }
+    },
+    "数据缺乏" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Data Deficient"
+          }
+        }
+      }
+    },
+    "文件夹" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Folders"
+          }
+        }
+      }
+    },
+    "文件夹名称不能为空、不能以「.」开头，也不能包含「/」或「:」。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "A folder name can’t be empty, start with “.”, or contain “/” or “:”."
+          }
+        }
+      }
+    },
+    "文件夹里的所有文件（包括 %lld 张照片，以及视频等其他文件）都会移到废纸篓，可以在 Finder 里放回原处。" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "All files in the folder (including %lld photo and other files such as videos) will be moved to the Trash. You can put them back from Finder."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "All files in the folder (including %lld photos and other files such as videos) will be moved to the Trash. You can put them back from Finder."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "新建文件夹" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Folder"
+          }
+        }
+      }
+    },
+    "新建文件夹…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "New Folder…"
+          }
+        }
+      }
+    },
+    "旗标" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flag"
+          }
+        }
+      }
+    },
+    "无危" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Least Concern"
+          }
+        }
+      }
+    },
+    "无旗标" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Flag"
+          }
+        }
+      }
+    },
+    "无法把「%@」移到废纸篓：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t move “%1$@” to the Trash: %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "无法把「%1$@」移到废纸篓：%2$@"
+          }
+        }
+      }
+    },
+    "无法新建文件夹：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t create the folder: %@"
+          }
+        }
+      }
+    },
+    "无法检查更新：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t check for updates: %@"
+          }
+        }
+      }
+    },
+    "无法读取来源：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t read the source: %@"
+          }
+        }
+      }
+    },
+    "无法读取模型清单：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t read the model list: %@"
+          }
+        }
+      }
+    },
+    "无法读取照片库" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Can’t Read the Library"
+          }
+        }
+      }
+    },
+    "易危" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Vulnerable"
+          }
+        }
+      }
+    },
+    "暂停" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause"
+          }
+        }
+      }
+    },
+    "暂停（空格）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pause (Space)"
+          }
+        }
+      }
+    },
+    "更改…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Change…"
+          }
+        }
+      }
+    },
+    "更新失败：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update failed: %@"
+          }
+        }
+      }
+    },
+    "最近导入" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recently Imported"
+          }
+        }
+      }
+    },
+    "有 %lld 张照片无法分析（可能缺少嵌入预览或文件已损坏）。" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld photo couldn’t be analysed (the embedded preview may be missing or the file damaged)."
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "%lld photos couldn’t be analysed (the embedded previews may be missing or the files damaged)."
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "有 %lld 张照片没能移动：%@\n%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "%#@n@ couldn’t be moved: %2$@\n%3$@"
+          },
+          "substitutions" : {
+            "n" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photo"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photos"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "有 %1$lld 张照片没能移动：%2$@\n%3$@"
+          }
+        }
+      }
+    },
+    "有 %lld 张照片的旗标没能写入：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t write the flag of %#@n@: %2$@"
+          },
+          "substitutions" : {
+            "n" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photo"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photos"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "有 %1$lld 张照片的旗标没能写入：%2$@"
+          }
+        }
+      }
+    },
+    "有 %lld 张照片的评分没能写入：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t write the rating of %#@n@: %2$@"
+          },
+          "substitutions" : {
+            "n" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photo"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photos"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "有 %1$lld 张照片的评分没能写入：%2$@"
+          }
+        }
+      }
+    },
+    "有 %lld 张照片的鸟种信息没能写入：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t write species info to %#@n@: %2$@"
+          },
+          "substitutions" : {
+            "n" : {
+              "argNum" : 1,
+              "formatSpecifier" : "lld",
+              "variations" : {
+                "plural" : {
+                  "one" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photo"
+                    }
+                  },
+                  "other" : {
+                    "stringUnit" : {
+                      "state" : "translated",
+                      "value" : "%arg photos"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "有 %1$lld 张照片的鸟种信息没能写入：%2$@"
+          }
+        }
+      }
+    },
+    "有新版本" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Update available"
+          }
+        }
+      }
+    },
+    "有照片没能移到废纸篓：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Some photos couldn’t be moved to the Trash: %@"
+          }
+        }
+      }
+    },
+    "未删除的文件" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Files Not Deleted"
+          }
+        }
+      }
+    },
+    "未命名文件夹" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "untitled folder"
+          }
+        }
+      }
+    },
+    "未安装" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not installed"
+          }
+        }
+      }
+    },
+    "未收录于《中国鸟类名录》2026 版" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not in the China Bird Checklist (2026)"
+          }
+        }
+      }
+    },
+    "未检测到存储卡。插入读卡器，或把相机的 USB 连接设为大容量存储模式后会自动出现。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No memory card found. It appears automatically once you insert a card reader, or set the camera’s USB connection to mass storage."
+          }
+        }
+      }
+    },
+    "未检测到相机。用 USB 连接相机，并把相机的 USB 连接设为 PTP（部分机型标为 MTP/PTP）。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No camera found. Connect the camera with USB and set its USB connection to PTP (MTP/PTP on some models)."
+          }
+        }
+      }
+    },
+    "未评估" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not Evaluated"
+          }
+        }
+      }
+    },
+    "来源" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source"
+          }
+        }
+      }
+    },
+    "来源类型" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Source type"
+          }
+        }
+      }
+    },
+    "极危" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Critically Endangered"
+          }
+        }
+      }
+    },
+    "检查更新…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Check for Updates…"
+          }
+        }
+      }
+    },
+    "检测、识鸟和评分用的 Core ML 模型来自 [superpicky-coreml](%@)。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The Core ML models for detection, identification and rating come from [superpicky-coreml](%@)."
+          }
+        }
+      }
+    },
+    "模型" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Models"
+          }
+        }
+      }
+    },
+    "模型加载失败：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t load the models: %@"
+          }
+        }
+      }
+    },
+    "模型已全部安装，均为最新版本。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "All models are installed and up to date."
+          }
+        }
+      }
+    },
+    "正在下载 Regulus %@…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Downloading Regulus %@…"
+          }
+        }
+      }
+    },
+    "正在删除存储卡上已导入的原文件…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deleting imported originals from the card…"
+          }
+        }
+      }
+    },
+    "正在删除相机里已导入的原文件…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Deleting imported originals from the camera…"
+          }
+        }
+      }
+    },
+    "正在加载模型…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Loading models…"
+          }
+        }
+      }
+    },
+    "正在导入 %lld / %lld  %@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importing %1$lld / %2$lld  %3$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "正在导入 %1$lld / %2$lld  %3$@"
+          }
+        }
+      }
+    },
+    "正在扫描照片…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Scanning photos…"
+          }
+        }
+      }
+    },
+    "正在校验并准备安装…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verifying and preparing to install…"
+          }
+        }
+      }
+    },
+    "正在检查更新…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Checking for updates…"
+          }
+        }
+      }
+    },
+    "正在读取模型清单…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading the model list…"
+          }
+        }
+      }
+    },
+    "正在读取照片库…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading the library…"
+          }
+        }
+      }
+    },
+    "正在读取相机中的照片列表…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reading the photo list from the camera…"
+          }
+        }
+      }
+    },
+    "没有找到照片。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No photos found."
+          }
+        }
+      }
+    },
+    "没有照片" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No Photos"
+          }
+        }
+      }
+    },
+    "添加文件夹" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Folder"
+          }
+        }
+      }
+    },
+    "添加文件夹…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Add Folder…"
+          }
+        }
+      }
+    },
+    "清除" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear"
+          }
+        }
+      }
+    },
+    "清除评分" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Clear Rating"
+          }
+        }
+      }
+    },
+    "濒危" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Endangered"
+          }
+        }
+      }
+    },
+    "灭绝" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extinct"
+          }
+        }
+      }
+    },
+    "照片" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Photo"
+          }
+        }
+      }
+    },
+    "照片库" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Library"
+          }
+        }
+      }
+    },
+    "相机" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera"
+          }
+        }
+      }
+    },
+    "相机 (PTP)" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Camera (PTP)"
+          }
+        }
+      }
+    },
+    "省 / 州" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Province / state"
+          }
+        }
+      }
+    },
+    "眼睛和鸟喙定位" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Eye & beak keypoints"
+          }
+        }
+      }
+    },
+    "移到「%@」" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move to “%@”"
+          }
+        }
+      }
+    },
+    "移到废纸篓" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move to Trash"
+          }
+        }
+      }
+    },
+    "移到废纸篓…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move to Trash…"
+          }
+        }
+      }
+    },
+    "移动到" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Move To"
+          }
+        }
+      }
+    },
+    "立即重新打开" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reopen Now"
+          }
+        }
+      }
+    },
+    "粘贴" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Paste"
+          }
+        }
+      }
+    },
+    "缩小" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom Out"
+          }
+        }
+      }
+    },
+    "缩小（⌘- 或 ⌘ + 滚轮向下）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom out (⌘- or ⌘ + scroll down)"
+          }
+        }
+      }
+    },
+    "缩放 %lld%%" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Zoom %lld%%"
+          }
+        }
+      }
+    },
+    "缩略图大小" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Thumbnail size"
+          }
+        }
+      }
+    },
+    "缺少模型文件，请在「设置 › 模型」中下载：\n%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Model files are missing. Download them in Settings › Models:\n%@"
+          }
+        }
+      }
+    },
+    "罕见" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rare"
+          }
+        }
+      }
+    },
+    "美学评分" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aesthetic scoring"
+          }
+        }
+      }
+    },
+    "能见" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Uncommon"
+          }
+        }
+      }
+    },
+    "视频" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Video"
+          }
+        }
+      }
+    },
+    "评分" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Rating"
+          }
+        }
+      }
+    },
+    "识别" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Identification"
+          }
+        }
+      }
+    },
+    "语言" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Language"
+          }
+        }
+      }
+    },
+    "请先选择导入到的文件夹。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose the folder to import to first."
+          }
+        }
+      }
+    },
+    "请选择来源。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose a source."
+          }
+        }
+      }
+    },
+    "跟随系统" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Same as System"
+          }
+        }
+      }
+    },
+    "近危" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Near Threatened"
+          }
+        }
+      }
+    },
+    "返回" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back"
+          }
+        }
+      }
+    },
+    "返回网格（Esc）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Back to the grid (Esc)"
+          }
+        }
+      }
+    },
+    "还没有地区名录，请在「设置 › 模型」中下载。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "No regional checklists yet. Download them in Settings › Models."
+          }
+        }
+      }
+    },
+    "这个文件夹就是照片库。照片和视频会按「类型 / 年月日」整理（如 Raw/20261025、Video/20261025），原文件不会被修改；只有勾选「导入后删除」时才会删除。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This folder is the library. Photos and videos are sorted by type / date (e.g. Raw/20261025, Video/20261025). Originals are never modified, and are deleted only if you turn on “Delete originals after importing”."
+          }
+        }
+      }
+    },
+    "这个文件夹就是照片库。照片和视频会按「类型 / 年月日」整理（如 Raw/20261025、Video/20261025），原文件不会被修改；只有导入时勾选「导入后删除」才会删除。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This folder is the library. Photos and videos are sorted by type / date (e.g. Raw/20261025, Video/20261025). Originals are never modified, and are deleted only if you turn on “Delete originals after importing” when importing."
+          }
+        }
+      }
+    },
+    "适合窗口" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fit to Window"
+          }
+        }
+      }
+    },
+    "适合窗口（⌘0）" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Fit to window (⌘0)"
+          }
+        }
+      }
+    },
+    "选择文件夹…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose Folder…"
+          }
+        }
+      }
+    },
+    "通用" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "General"
+          }
+        }
+      }
+    },
+    "通过 USB 从相机导入通常比读卡器慢。已导入过的同名照片需要重新下载一次来比对内容。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Importing from a camera over USB is usually slower than a card reader. Photos with the same name as ones already imported are downloaded again to compare their contents."
+          }
+        }
+      }
+    },
+    "重新打开 Regulus 后生效。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Takes effect after Regulus reopens."
+          }
+        }
+      }
+    },
+    "重新载入照片库" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Reload Library"
+          }
+        }
+      }
+    },
+    "重新选择来源" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Choose Another Source"
+          }
+        }
+      }
+    },
+    "重试" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Retry"
+          }
+        }
+      }
+    },
+    "野外灭绝" : {
+      "comment" : "RegulusCore 的词条 / term from RegulusCore",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Extinct in the Wild"
+          }
+        }
+      }
+    },
+    "飞版识别" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Flight detection"
+          }
+        }
+      }
+    },
+    "鸟的检测与分割" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bird detection & segmentation"
+          }
+        }
+      }
+    },
+    "鸟种识别" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Species identification"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

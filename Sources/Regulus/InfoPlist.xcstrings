@@ -1,0 +1,24 @@
+{
+  "sourceLanguage" : "zh-Hans",
+  "strings" : {
+    "NSRemovableVolumesUsageDescription" : {
+      "comment" : "Privacy - Removable Volumes Usage Description",
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regulus needs to read photos on your camera’s memory card to import them into the folder you choose."
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Regulus 需要读取相机存储卡中的照片并导入到你选择的文件夹。"
+          }
+        }
+      }
+    }
+  },
+  "version" : "1.0"
+}

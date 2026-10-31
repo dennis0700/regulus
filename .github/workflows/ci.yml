@@ -1,0 +1,20 @@
+# 每次 push 到 main 和每个 PR：构建并测试核心库，再构建 App
+# On every push to main and every PR: build and test the core library, then build the app.
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    # 需要 macOS 26 SDK（Xcode 26）/ needs the macOS 26 SDK (Xcode 26)
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v5
+      # 需要样片或模型的测试在 CI 上会自动跳过 / tests that need samples or models skip themselves on CI
+      - run: swift build
+      - run: swift test
+      - run: brew install xcodegen
+      - run: scripts/package.sh

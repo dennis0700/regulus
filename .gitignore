@@ -1,0 +1,17 @@
+# 模型从 superpicky-coreml 的 GitHub Release 下载，不入库 / Models come from the superpicky-coreml release
+/models/
+*.mlpackage
+*.mlmodelc
+# 样片由 scripts/fetch_samples.py 下载 / Samples are fetched by scripts/fetch_samples.py
+/samples/
+
+# 构建与工具缓存 / Build and tool caches
+.build/
+.codegraph/
+.ruff_cache/
+__pycache__/
+xcuserdata/
+DerivedData/
+.DS_Store
+# 由 project.yml 用 xcodegen generate 生成 / Generated from project.yml by xcodegen generate
+Regulus.xcodeproj/

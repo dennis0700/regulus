@@ -1,0 +1,35 @@
+# 推送 v<版本号> tag 时构建 App 并发布 GitHub Release（附件 Regulus.zip），App 内的更新检查读取的就是它
+# On a v<version> tag push, build the app and publish a GitHub release with Regulus.zip, which the in-app update
+# check reads.
+name: Release
+
+on:
+  push:
+    tags: ["v*"]
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: macos-26
+    steps:
+      - uses: actions/checkout@v5
+      - run: brew install xcodegen
+      - run: scripts/package.sh
+      # tag 必须与 App 的版本号一致，否则 App 会拒绝这个更新包 / the tag must match the app's version, or the app
+      # rejects the package
+      - name: Check version
+        run: |
+          version=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' \
+            .build/release-app/derived/Build/Products/Release/Regulus.app/Contents/Info.plist)
+          if [ "v$version" != "$GITHUB_REF_NAME" ]; then
+            echo "tag $GITHUB_REF_NAME does not match MARKETING_VERSION $version in project.yml" >&2
+            exit 1
+          fi
+      - name: Publish
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release create "$GITHUB_REF_NAME" .build/release-app/Regulus.zip \
+            --title "Regulus ${GITHUB_REF_NAME#v}" --generate-notes

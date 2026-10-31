@@ -1,0 +1,54 @@
+name: Regulus
+options:
+  bundleIdPrefix: app.regulus
+  # 代码里的界面文字是中文，作为源语言；其他语言的译文在 Sources/Regulus/*.xcstrings / UI strings in the code
+  # are Chinese, the source language; translations live in Sources/Regulus/*.xcstrings
+  developmentLanguage: zh-Hans
+  deploymentTarget:
+    macOS: "14.0"
+packages:
+  regulus:
+    path: .
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    MARKETING_VERSION: "0.1.0"
+    # 构建号跟版本号相同，「关于」里就只显示版本号，不带「(1)」/ the build number equals the version so About shows
+    # only the version, without "(1)"
+    CURRENT_PROJECT_VERSION: "$(MARKETING_VERSION)"
+    # 构建时从 Swift 代码里提取界面文字，同步进 String Catalog / extract UI strings from Swift at build time for the
+    # String Catalogs
+    SWIFT_EMIT_LOC_STRINGS: YES
+targets:
+  Regulus:
+    type: application
+    platform: macOS
+    sources:
+      - Sources/Regulus
+    dependencies:
+      - package: regulus
+        product: RegulusCore
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.regulus.Regulus
+        # 本地开发用 ad hoc 签名；发布时换成 Developer ID / ad hoc signing for local builds
+        CODE_SIGN_IDENTITY: "-"
+        GENERATE_INFOPLIST_FILE: YES
+        INFOPLIST_KEY_CFBundleDisplayName: Regulus
+        INFOPLIST_KEY_LSApplicationCategoryType: public.app-category.photography
+        INFOPLIST_KEY_NSRemovableVolumesUsageDescription: Regulus 需要读取相机存储卡中的照片并导入到你选择的文件夹。
+        # 与自动生成的键合并；只放生成功能不支持的 CFBundleIconFile / Merged with the generated keys; holds only
+        # CFBundleIconFile, which the generator does not support
+        INFOPLIST_FILE: assets/Info.plist
+    # 从 assets/AppIcon.svg 生成 AppIcon.icns，只在 SVG 或脚本改动后重跑 / Build AppIcon.icns from
+    # assets/AppIcon.svg; reruns only when the SVG or the script changes
+    preBuildScripts:
+      - name: App Icon
+        script: |
+          swift "$SRCROOT/scripts/make_icon.swift" "$SRCROOT/assets/AppIcon.svg" \
+            "$TARGET_BUILD_DIR/$UNLOCALIZED_RESOURCES_FOLDER_PATH/AppIcon.icns"
+        inputFiles:
+          - $(SRCROOT)/assets/AppIcon.svg
+          - $(SRCROOT)/scripts/make_icon.swift
+        outputFiles:
+          - $(TARGET_BUILD_DIR)/$(UNLOCALIZED_RESOURCES_FOLDER_PATH)/AppIcon.icns
