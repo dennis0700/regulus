@@ -32,24 +32,29 @@ public enum SpeciesTagFile {
         return lines.joined(separator: "\n")
     }
 
-    /// 写入；写完读回校验，失败时原文件不变 / Write, then read back to verify; the original is untouched on failure.
+    /// 写入；写完读回校验，失败时原文件不变。replacing 是原来的鸟名，给了就从关键字里去掉它（更正识别结果时）
+    /// Write, then read back to verify; the original is untouched on failure. replacing is the old species name,
+    /// removed from the keywords when given (when correcting an identification).
     ///
     /// # Examples
     /// ```
     /// try SpeciesTagFile.write(info, to: URL(fileURLWithPath: "/Photos/DSC_7624.dng"))
+    /// try SpeciesTagFile.write(swan, to: photo, replacing: "大天鹅")
     /// ```
     ///
     /// - Throws: 同 `RatingFile.rewrite`：主要是 `RegulusError.metadata`（写入或校验失败）
     ///   As `RatingFile.rewrite`: mainly `RegulusError.metadata` when writing or verification fails.
-    public static func write(_ info: SpeciesInfo, to url: URL) throws {
+    public static func write(_ info: SpeciesInfo, to url: URL, replacing old: String? = nil) throws {
         let text = description(info)
+        let removed = old == info.zh ? nil : old
         // 已有的 EXIF 描述（如 SuperPicky 的评分说明）一并替换 / an existing EXIF description (e.g. SuperPicky's
         // rating caption) is replaced too
-        let edit = MetadataEdit(title: info.zh, description: text, keyword: info.zh)
+        let edit = MetadataEdit(title: info.zh, description: text, keyword: info.zh, removedKeyword: removed)
         try RatingFile.rewrite(url, edit: edit) { temp in
             guard let tags = read(temp) else { return "cannot read back" }
             if tags.title != info.zh { return "title \(tags.title ?? "nil")" }
             if tags.description != text { return "description differs" }
+            if let removed, tags.keywords.contains(removed) { return "old keyword kept" }
             return tags.keywords.contains(info.zh) ? nil : "keyword missing"
         }
     }

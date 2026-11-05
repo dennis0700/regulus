@@ -17,14 +17,18 @@ public struct MetadataEdit: Sendable, Equatable {
     public var description: String?
     /// 追加到 `dc:subject` 的关键字（已有则不重复）/ Keyword added to `dc:subject` (once).
     public var keyword: String?
+    /// 从 `dc:subject` 去掉的关键字，只在 keyword 不为 nil 时生效（更正鸟种时去掉原来的鸟名）
+    /// Keyword removed from `dc:subject`, only together with keyword (drops the old name when correcting a species).
+    public var removedKeyword: String?
 
     public init(rating: Int? = nil, label: String? = nil, title: String? = nil, description: String? = nil,
-                keyword: String? = nil) {
+                keyword: String? = nil, removedKeyword: String? = nil) {
         self.rating = rating
         self.label = label
         self.title = title
         self.description = description
         self.keyword = keyword
+        self.removedKeyword = removedKeyword
     }
 }
 
@@ -87,7 +91,8 @@ enum XMPPacket {
             }
         }
         if let keyword = edit.keyword {
-            let all = keywords.contains(keyword) ? keywords : keywords + [keyword]
+            let kept = keywords.filter { $0 != edit.removedKeyword }
+            let all = kept.contains(keyword) ? kept : kept + [keyword]
             guard let tag = CGImageMetadataTagCreate(kCGImageMetadataNamespaceDublinCore, kCGImageMetadataPrefixDublinCore,
                                                      "subject" as CFString, .arrayUnordered, all as CFArray),
                   CGImageMetadataSetTagWithPath(metadata, nil, "dc:subject" as CFString, tag) else {

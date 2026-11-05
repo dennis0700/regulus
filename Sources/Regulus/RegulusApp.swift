@@ -78,10 +78,11 @@ struct RegulusApp: App {
         }
     }
 
-    /// 有选中照片且没有打开导入面板时才能评分、设旗标（快捷键没有修饰键，避免面板里误触）
-    /// Rating and flagging need a selection and no import sheet (the keys have no modifier, so avoid stray presses there).
+    /// 有选中照片且没有打开导入面板、更正鸟种输入框时才能评分、设旗标（快捷键没有修饰键，避免在面板里打字时误触）
+    /// Rating and flagging need a selection and no import or species correction sheet (the keys have no modifier, so
+    /// avoid stray presses while typing there).
     private var canRate: Bool {
-        !library.selection.isEmpty && !library.isImportPresented
+        !library.selection.isEmpty && !library.isImportPresented && library.speciesCorrectionTargets == nil
     }
 
     /// 剪切/拷贝/粘贴照常交给响应链；⌘A 在文本框里全选文字，否则全选照片

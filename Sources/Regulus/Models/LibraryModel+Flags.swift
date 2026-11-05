@@ -27,11 +27,13 @@ extension LibraryModel {
         guard !targets.isEmpty else { return }
         let previous = targets.map { flags[$0] }
         let previousStars = targets.map { userRatings[$0] }
+        let before = visiblePhotos.map(\.url)
         for url in targets {
             flags[url] = flag
             pendingFlags.updateValue(flag, forKey: url)
             if flag == .rejected { userRatings[url] = nil }
         }
+        reselectAfterChange(before: before)
         let startGeneration = generation
         let earlier = fileWrites
         fileWrites = Task {

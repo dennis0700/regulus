@@ -56,6 +56,12 @@ struct MainView: View {
         .sheet(isPresented: $library.isImportPresented) {
             ImportView(model: importModel) { library.isImportPresented = false }
         }
+        .sheet(isPresented: Binding(get: { library.speciesCorrectionTargets != nil },
+                                    set: { if !$0 { library.speciesCorrectionTargets = nil } })) {
+            if let targets = library.speciesCorrectionTargets {
+                SpeciesCorrectionSheet(library: library, targets: targets)
+            }
+        }
         // 导入面板开着时先不弹，关掉后再显示 / held back while the import sheet is open, shown once it closes
         .sheet(isPresented: Binding(get: { updates.isPresented && !library.isImportPresented },
                                     set: { if !$0 { updates.close() } }),

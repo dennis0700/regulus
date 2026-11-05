@@ -116,6 +116,7 @@ final class LibraryModel {
         directory: modelsRepo.appendingPathComponent("models")) { [weak self] in
         guard let self else { return }
         speciesTable = try? SpeciesInfoTable(url: modelsRepo.appendingPathComponent("models/birdtrace/species_info.json"))
+        speciesSearch = nil
     }
     // 下面三项都从照片文件读出，键为照片 URL / The three below are read from the photo files, keyed by photo URL.
     /// 星级（人工、AI、机内或其他软件写入的 1–5 星）/ Stars (1–5, set by hand, by AI, in camera or by other apps).
@@ -126,6 +127,14 @@ final class LibraryModel {
     /// 写照片文件（评分、旗标、鸟种信息）按顺序排队，同一个文件不会被同时写
     /// Writes into photo files (ratings, flags, species info) are queued so one file is never written twice at once.
     @ObservationIgnored var fileWrites: Task<Void, Never>?
+    /// 正在更正鸟种的照片（右键「更正鸟种…」），nil 时不显示输入框 / Photos whose species is being corrected (context
+    /// menu "Correct Species…"); nil hides the entry sheet.
+    var speciesCorrectionTargets: [URL]?
+    /// 更正鸟种时的名录搜索，第一次用时在后台建好 / Checklist search for corrections, built in the background on first use.
+    var speciesSearch: SpeciesSearch?
+    /// 默认拍摄地区所在国家名录里的鸟种，更正时排在前面 / Species in the default shooting region's country list,
+    /// ranked first when correcting.
+    var regionalSpecies: Set<Int> = []
     /// 已设置、还没写进文件的评分（0 为清除）和旗标；重新扫描时以它们为准
     /// Ratings (0 = clear) and flags set but not yet written; they win over what a rescan reads from the files.
     @ObservationIgnored var pendingRatings: [URL: Int] = [:]

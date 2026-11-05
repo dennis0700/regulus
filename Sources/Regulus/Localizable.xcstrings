@@ -542,12 +542,32 @@
         }
       }
     },
+    "中文名、拼音或首字母（如 xte）、英文名" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Chinese name, pinyin or initials (e.g. xte), English name"
+          }
+        }
+      }
+    },
     "从侧边栏移除" : {
       "localizations" : {
         "en" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Remove from Sidebar"
+          }
+        }
+      }
+    },
+    "从名录里选鸟种写进照片，可以输入拼音首字母，如 xte → 小天鹅" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Pick a species from the checklist and write it into the photo; pinyin initials work, e.g. xte → 小天鹅"
           }
         }
       }
@@ -790,6 +810,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Regional species checklists"
+          }
+        }
+      }
+    },
+    "名录里没有找到" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Not in the checklist"
           }
         }
       }
@@ -1360,6 +1390,16 @@
         }
       }
     },
+    "当前：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Current: %@"
+          }
+        }
+      }
+    },
     "快进 10 秒" : {
       "localizations" : {
         "en" : {
@@ -1790,6 +1830,68 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Update failed: %@"
+          }
+        }
+      }
+    },
+    "更正" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct"
+          }
+        }
+      }
+    },
+    "更正 %lld 张照片的鸟种" : {
+      "localizations" : {
+        "en" : {
+          "variations" : {
+            "plural" : {
+              "one" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Correct the Species of %lld Photo"
+                }
+              },
+              "other" : {
+                "stringUnit" : {
+                  "state" : "translated",
+                  "value" : "Correct the Species of %lld Photos"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "更正鸟种" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct Species"
+          }
+        }
+      }
+    },
+    "更正鸟种…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct Species…"
+          }
+        }
+      }
+    },
+    "更正鸟种（%lld 张）…" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Correct Species (%lld Photos)…"
           }
         }
       }

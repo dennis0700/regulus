@@ -19,6 +19,11 @@ struct PhotoContextMenu: View {
             Button(tagged == 1 ? "写入鸟种信息" : "写入鸟种信息（\(tagged) 张）") { library.writeSpeciesTags(targets) }
                 .help("把鸟名、目科属、IUCN 等级和罕见度写进照片的标题、描述和关键字（会替换原有描述）")
         }
+        // 没有名录信息时不能更正 / correcting needs the checklist info
+        if library.speciesTable != nil, targets.contains(where: RatingFile.canWrite) {
+            Button(count == 1 ? "更正鸟种…" : "更正鸟种（\(count) 张）…") { library.beginSpeciesCorrection(targets) }
+                .help("从名录里选鸟种写进照片，可以输入拼音首字母，如 xte → 小天鹅")
+        }
         Divider()
         // 视频、RAF 不能打旗标和评分 / videos and RAF cannot be flagged or rated
         if targets.contains(where: RatingFile.canWrite) {

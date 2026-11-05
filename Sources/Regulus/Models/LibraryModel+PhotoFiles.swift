@@ -19,11 +19,13 @@ extension LibraryModel {
         guard !targets.isEmpty else { return }
         let previous = targets.map { userRatings[$0] }
         let previousFlags = targets.map { flags[$0] }
+        let before = visiblePhotos.map(\.url)
         for url in targets {
             userRatings[url] = stars
             pendingRatings[url] = stars ?? 0
             if flags[url] == .rejected { flags[url] = nil }
         }
+        reselectAfterChange(before: before)
         let startGeneration = generation
         let earlier = fileWrites
         fileWrites = Task {
@@ -62,17 +64,52 @@ extension LibraryModel {
         writeSpeciesTags(speciesTagTargets(urls))
     }
 
-    /// 把鸟种信息（标题、描述、关键字）写进照片文件，在后台与评分写入共用一个队列；识别后自动调用，写成功的更新标题
+    /// 打开更正鸟种的输入框；第一次时在后台建拼音索引。每次都读默认拍摄地区所在国家的名录，用于排序
+    /// Open the species correction sheet; the first time, build the pinyin index in the background. Each time, read
+    /// the checklist of the default shooting region's country for ranking.
+    func beginSpeciesCorrection(_ urls: [URL]) {
+        let targets = urls.filter(RatingFile.canWrite)
+        guard !targets.isEmpty, let table = speciesTable else { return }
+        speciesCorrectionTargets = targets
+        let region = ShootingRegion.saved
+        regionalSpecies = (try? RegionChecklist(url: regionsURL))?
+            .tiers(country: region.country, province: region.province).last ?? []
+        guard speciesSearch == nil else { return }
+        Task {
+            let search = await Task.detached(priority: .userInitiated) { SpeciesSearch(table: table) }.value
+            speciesSearch = search
+        }
+    }
+
+    /// 把选中的鸟种写进待更正的照片，关闭输入框 / Write the chosen species into the photos being corrected and close the
+    /// sheet.
+    func applySpeciesCorrection(_ info: SpeciesInfo) {
+        guard let targets = speciesCorrectionTargets else { return }
+        speciesCorrectionTargets = nil
+        writeSpeciesTags(targets.map { ($0, info) })
+    }
+
+    /// 把鸟种信息（标题、描述、关键字）写进照片文件，在后台与评分写入共用一个队列；识别后自动调用，写成功的更新标题。
+    /// 原标题是名录里别的鸟名时，从关键字里去掉它
     /// Write species info (title, description, keyword) into the photo files, queued in the background with rating
-    /// writes; called after identifying, and the titles of successful writes are updated.
+    /// writes; called after identifying, and the titles of successful writes are updated. When the old title is
+    /// another checklist name it is removed from the keywords.
     func writeSpeciesTags(_ targets: [(url: URL, info: SpeciesInfo)]) {
         guard !targets.isEmpty else { return }
         let startGeneration = generation
         let earlier = fileWrites
         fileWrites = Task {
             await earlier?.value
+            // 等前面的写入（如刚识别出的鸟种）完成后再取原标题 / read the old titles only after earlier writes
+            // (such as a species just identified) have landed
+            let replaced = targets.map { target in
+                titles[target.url].flatMap { speciesTable?.info(named: $0) != nil ? $0 : nil }
+            }
             let failed = await Task.detached(priority: .utility) {
-                targets.filter { (try? SpeciesTagFile.write($0.info, to: $0.url)) == nil }.map(\.url)
+                targets.indices.filter { index in
+                    (try? SpeciesTagFile.write(targets[index].info, to: targets[index].url,
+                                               replacing: replaced[index])) == nil
+                }.map { targets[$0].url }
             }.value
             if generation == startGeneration {
                 for target in targets where !failed.contains(target.url) { titles[target.url] = target.info.zh }

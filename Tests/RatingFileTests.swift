@@ -245,6 +245,21 @@ func speciesTagsReplaceTheDescriptionAndAddTheKeywordOnce(type: UTType) throws {
     #expect(try FileManager.default.contentsOfDirectory(atPath: dir.path) == [photo.lastPathComponent])
 }
 
+@Test func correctingTheSpeciesReplacesTheOldKeyword() throws {
+    let dir = try makeTempDir()
+    defer { try? FileManager.default.removeItem(at: dir) }
+    let photo = dir.appendingPathComponent("IMG_0001.jpg")
+    try writeImage(photo, metadata: try oldCaption().metadata)
+    let swan = SpeciesInfo(zh: "小天鹅", en: "Tundra Swan", sci: "Cygnus columbianus", inChina: true,
+                           order: "雁形目", family: "鸭科", genus: "天鹅属", iucn: "LC", rarity: 10)
+    try SpeciesTagFile.write(owlet, to: photo)
+    try SpeciesTagFile.write(swan, to: photo, replacing: "领鸺鹠")
+    let tags = try #require(SpeciesTagFile.read(photo))
+    #expect(tags.title == "小天鹅")
+    #expect(tags.description == SpeciesTagFile.description(swan))
+    #expect(tags.keywords == ["鸟", "小天鹅"])
+}
+
 /// 真实 RAW 写鸟种信息：关键字不重复，已有 EXIF 描述被替换 / Real RAWs: keyword added once, EXIF description
 /// replaced.
 @Test(.enabled(if: hasSamples))

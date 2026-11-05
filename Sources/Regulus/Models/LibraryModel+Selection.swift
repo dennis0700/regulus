@@ -117,6 +117,39 @@ extension LibraryModel {
         videoNeighbour(delta) != nil
     }
 
+    /// 改了星级或旗标后，按星级、旗标筛选的列表里会少掉照片：把它们移出选择，选择因此空了就选中原位置之后的下一张
+    /// （后面没有就选前一张）；预览中的那张没了同样换到下一张，都没有了就回到网格
+    /// After a rating or flag change, a star or flag list can lose photos: drop them from the selection and, if that
+    /// empties it, select the next photo after their old position (or the previous one at the end); a previewed photo
+    /// that is gone moves on the same way, back to the grid when nothing is left.
+    ///
+    /// - Parameter before: 改之前当前列表的照片 / The current list's photos before the change.
+    func reselectAfterChange(before: [URL]) {
+        guard !before.isEmpty else { return }
+        let visible = Set(visiblePhotos.map(\.url))
+        func replacement(after gone: Set<URL>) -> URL? {
+            guard let last = before.lastIndex(where: gone.contains) else { return nil }
+            return before[(last + 1)...].first(where: visible.contains)
+                ?? before[..<last].reversed().first(where: visible.contains)
+        }
+        if let url = previewURL, !visible.contains(url) {
+            if let next = replacement(after: [url]), let photo = visiblePhotos.first(where: { $0.url == next }) {
+                openPreview(photo)
+            } else {
+                closePreview()
+                clearSelection()
+            }
+            return
+        }
+        let gone = selection.subtracting(visible)
+        guard !gone.isEmpty else { return }
+        selection.subtract(gone)
+        if selection.isEmpty, let next = replacement(after: gone) {
+            selection = [next]
+            selectionAnchor = next
+        }
+    }
+
     private func videoNeighbour(_ delta: Int) -> LibraryPhoto? {
         let photos = visiblePhotos
         guard let url = previewURL, let index = photos.firstIndex(where: { $0.url == url }) else { return nil }
