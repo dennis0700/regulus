@@ -12,7 +12,7 @@ packages:
 settings:
   base:
     SWIFT_VERSION: "6.0"
-    MARKETING_VERSION: "0.1.1"
+    MARKETING_VERSION: "0.1.2"
     # 构建号跟版本号相同，「关于」里就只显示版本号，不带「(1)」/ the build number equals the version so About shows
     # only the version, without "(1)"
     CURRENT_PROJECT_VERSION: "$(MARKETING_VERSION)"

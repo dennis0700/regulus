@@ -37,6 +37,7 @@ struct MainView: View {
                             AnalysisButton(library: library, tasks: .rate, systemImage: "star")
                             AnalysisButton(library: library, tasks: .identify, systemImage: "bird")
                             AnalysisButton(library: library, tasks: .all, systemImage: "sparkles")
+                            PhotoShareLink(urls: selectedPhotoURLs)
                         }
                         .padding(.horizontal, 12)
                     }
@@ -77,6 +78,12 @@ struct MainView: View {
             library.load(root: importModel.destination)
             library.showImported(importModel.importedURLs)
         }
+    }
+
+    /// 工具栏分享只处理当前选择；预览时进入预览会自动选中该照片。
+    /// The toolbar shares the current selection; opening a preview selects that photo.
+    private var selectedPhotoURLs: [URL] {
+        library.visiblePhotos.map(\.url).filter(library.selection.contains)
     }
 
     @ViewBuilder

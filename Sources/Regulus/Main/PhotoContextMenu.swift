@@ -13,6 +13,10 @@ struct PhotoContextMenu: View {
         let targets = library.contextTargets(for: photo)
         let count = targets.count
         Button("在 Finder 中显示") { NSWorkspace.shared.activateFileViewerSelecting([photo.url]) }
+        ShareLink(items: targets) {
+            Label(count == 1 ? "分享" : "分享（\(count) 张）", systemImage: "square.and.arrow.up")
+        }
+        Divider()
         let tagged = library.speciesTagTargets(targets).count
         // 没有识别出鸟种、或鸟种没有名录信息时不显示这一项 / hidden unless some target has a species with checklist info
         if tagged > 0 {

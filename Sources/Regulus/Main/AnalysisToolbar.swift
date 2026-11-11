@@ -38,6 +38,21 @@ struct AnalysisButton: View {
     }
 }
 
+/// 系统分享菜单。AirDrop 由 macOS 的分享服务提供，因此会随系统可用状态显示。
+/// The system sharing menu. AirDrop is supplied by macOS and appears when it is available.
+struct PhotoShareLink: View {
+    let urls: [URL]
+
+    var body: some View {
+        ShareLink(items: urls) {
+            Label("分享", systemImage: "square.and.arrow.up")
+        }
+        .help(urls.count == 1 ? String(localized: "分享所选照片。")
+              : String(localized: "分享所选的 \(urls.count) 张照片。"))
+        .disabled(urls.isEmpty)
+    }
+}
+
 /// 工具栏正中：分析的进度和停止按钮，只在分析时出现 / Toolbar centre: analysis progress and Stop, shown only while running.
 struct AnalysisProgressBar: View {
     let progress: LibraryModel.AnalysisProgress
