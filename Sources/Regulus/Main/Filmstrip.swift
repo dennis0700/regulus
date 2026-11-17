@@ -13,6 +13,7 @@ struct Filmstrip: View {
                 LazyHStack(spacing: 2) {
                     ForEach(library.visiblePhotos) { photo in
                         FilmstripCell(photo: photo, cache: library.thumbnails, isCurrent: photo.url == current,
+                                      isSelected: library.selection.contains(photo.url),
                                       flag: library.flag(for: photo))
                             .id(photo.url)
                             .onTapGesture { library.openPreview(photo) }
@@ -32,6 +33,7 @@ struct FilmstripCell: View {
     let photo: LibraryPhoto
     let cache: ThumbnailCache
     let isCurrent: Bool
+    let isSelected: Bool
     let flag: PhotoFlag?
     @State private var thumbnail: Thumbnail?
 
@@ -56,11 +58,17 @@ struct FilmstripCell: View {
                 if let flag { FlagMark(flag: flag).padding(3) }
             }
             .overlay {
-                if isCurrent { Rectangle().strokeBorder(Color.accentColor, lineWidth: 3) }
+                // 当前那张粗框；其余选中的（如 ⌘A 之后）细一些的半透明框
+                // Thick border on the current photo; other selected ones (e.g. after ⌘A) get a thinner, fainter one
+                if isCurrent {
+                    Rectangle().strokeBorder(Color.accentColor, lineWidth: 3)
+                } else if isSelected {
+                    Rectangle().strokeBorder(Color.accentColor.opacity(0.6), lineWidth: 2)
+                }
             }
             .contentShape(Rectangle())
             // 512 与网格小格子那一档共用缓存 / 512 shares cache entries with the grid's small-cell tier
             .task(id: photo) { thumbnail = await cache.thumbnail(for: photo.url, maxPixelSize: 512) }
-            .accessibilityAddTraits(isCurrent ? .isSelected : [])
+            .accessibilityAddTraits(isCurrent || isSelected ? .isSelected : [])
     }
 }

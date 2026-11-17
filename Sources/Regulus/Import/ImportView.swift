@@ -223,6 +223,9 @@ struct ImportView: View {
                     }
                 }
             }
+            if let card = model.ejectedCard {
+                Label("已弹出「\(card)」，可以拔下了。", systemImage: "eject")
+            }
             HStack {
                 if let destination = model.destination {
                     Button("在 Finder 中显示") { NSWorkspace.shared.activateFileViewerSelecting([destination]) }

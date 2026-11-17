@@ -43,6 +43,8 @@ final class ImportModel {
     private(set) var report: ImportReport?
     /// 导入后删除源文件的结果；没勾选时为 nil / Result of deleting the sources; nil when the option was off.
     private(set) var deletion: DeletionReport?
+    /// 导入完成后已自动弹出的存储卡名称 / Name of the card ejected automatically after importing.
+    private(set) var ejectedCard: String?
     /// 导入后删除存储卡 / 相机里的原文件。每次换来源或重新开始都恢复为关闭，不记住
     /// Delete originals on the card or camera after importing. Reset to off for every new source or reset; not remembered.
     var deletesSourceAfterImport = false
@@ -157,6 +159,7 @@ final class ImportModel {
         errorMessage = nil
         progress = nil
         deletion = nil
+        ejectedCard = nil
         phase = .importing
         let work = Task.detached(priority: .userInitiated) {
             try await importer.run(files: files) { update in
@@ -173,6 +176,11 @@ final class ImportModel {
                     phase = .deleting
                     deletion = await PhotoImporter.deleteImportedSources(files, report: finished)
                 }
+                // 全部成功才自动弹出存储卡，有失败时留着方便重试 / eject the card only when everything succeeded,
+                // otherwise keep it mounted for a retry
+                if case let .card(url) = selection, finished.failed == 0, deletion?.failures.isEmpty ?? true {
+                    await eject(url)
+                }
             } catch is CancellationError {
                 errorMessage = String(localized: "导入已取消，已复制的照片保留在目标文件夹中。")
             } catch {
@@ -185,6 +193,17 @@ final class ImportModel {
 
     func cancelImport() {
         importTask?.cancel()
+    }
+
+    /// 弹出存储卡（读卡器或大容量存储模式的相机）；失败时提示用户手动弹出
+    /// Eject the card (a card reader or a camera in mass-storage mode); on failure, ask the user to eject it by hand.
+    private func eject(_ url: URL) async {
+        do {
+            try await FileManager.default.unmountVolume(at: url, options: .allPartitionsAndEjectDisk)
+            ejectedCard = url.lastPathComponent
+        } catch {
+            errorMessage = String(localized: "无法自动弹出「\(url.lastPathComponent)」，请在 Finder 中手动弹出：\(error.localizedDescription)")
+        }
     }
 
     /// 回到初始状态并重新检测存储卡，准备导入下一张卡（保留来源类型）
@@ -202,6 +221,7 @@ final class ImportModel {
         progress = nil
         report = nil
         deletion = nil
+        ejectedCard = nil
         deletesSourceAfterImport = false
         errorMessage = nil
         phase = .idle
@@ -214,6 +234,7 @@ final class ImportModel {
         files = []
         report = nil
         deletion = nil
+        ejectedCard = nil
         // 换来源时恢复为不删除，每次都要明确勾选 / back to "don't delete" for every new source; it must be ticked each time
         deletesSourceAfterImport = false
         errorMessage = nil
