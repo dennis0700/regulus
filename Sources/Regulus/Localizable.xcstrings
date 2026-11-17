@@ -1332,6 +1332,16 @@
         }
       }
     },
+    "已弹出「%@」，可以拔下了。" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "“%@” has been ejected. You can unplug it now."
+          }
+        }
+      }
+    },
     "常见" : {
       "comment" : "RegulusCore 的词条 / term from RegulusCore",
       "extractionState" : "manual",
@@ -1748,6 +1758,22 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Couldn’t check for updates: %@"
+          }
+        }
+      }
+    },
+    "无法自动弹出「%@」，请在 Finder 中手动弹出：%@" : {
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Couldn’t eject “%1$@” automatically. Eject it in the Finder: %2$@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "无法自动弹出「%1$@」，请在 Finder 中手动弹出：%2$@"
           }
         }
       }
